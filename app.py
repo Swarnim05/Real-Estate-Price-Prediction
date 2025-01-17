@@ -5,8 +5,8 @@ import joblib  # For loading your saved model
 import json
 
 # Load model and columns data
-lr_clf = joblib.load(r'C:\Users\nainw\Downloads\Real-Estate-Price-Prediction\price prediction real estate\Data3.pickle') 
-with open(r'C:\Users\nainw\Downloads\Real-Estate-Price-Prediction\price prediction real estate\columns.json', 'r') as f:
+lr_clf = joblib.load(r'Data3.pickle') 
+with open(r'columns.json', 'r') as f:
     data_columns = json.load(f)['data columns']
 
 # Function for price prediction
